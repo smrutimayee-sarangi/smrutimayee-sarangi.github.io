@@ -5,14 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Smrutimayee Sarangi</title>
   <style>
-    body { font-family: Georgia, serif; max-width: 700px; margin: 60px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-    h1 { margin-bottom: 0; }
-    p.sub { margin-top: 4px; color: #666; }
+    :root { --text:#222; --muted:#666; --accent:#8a3b2a; --line:#e5e5e5; }
+    * { box-sizing: border-box; }
+    body { font-family: Georgia, serif; color: var(--text); margin: 0; line-height: 1.7; }
+    header { border-bottom: 1px solid var(--line); padding: 16px 20px; position: sticky; top: 0; background: #fff; }
+    nav { max-width: 800px; margin: 0 auto; display: flex; gap: 22px; flex-wrap: wrap; align-items: baseline; }
+    nav .name { font-weight: bold; margin-right: auto; }
+    nav a { color: var(--text); text-decoration: none; }
+    nav a:hover { color: var(--accent); }
+    main { max-width: 800px; margin: 0 auto; padding: 0 20px 60px; }
+    section { padding: 48px 0 8px; }
+    h1 { font-size: 2.2rem; margin: 0 0 4px; }
+    h2 { font-size: 1.4rem; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+    .sub { color: var(--muted); margin-top: 0; }
+    .hero { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; padding-top: 56px; }
+    .hero img { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; }
+    a { color: var(--accent); }
   </style>
 </head>
 <body>
-  <h1>Smrutimayee Sarangi</h1>
-  <p class="sub">PhD Researcher</p>
-  <p>My website is coming soon.</p>
+  <header>
+    <nav>
+      <span class="name">Smrutimayee Sarangi</span>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img src="profile.jpg" alt="Photo of Smrutimayee Sarangi">
+      <div>
+        <h1>Smrutimayee Sarangi</h1>
+        <p class="sub">PhD Researcher, School of Politics and International Relations, University College Dublin </p>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a PhD researcher at University College Dublin. My work looks at maternal health among indigenous (tribal) women in India, and how community, social networks, family and systemic factors shape their healthcare access and outcomes.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>[Two or three sentences on your main research question and methods.]</p>
+    </section>
+
+    <section id="publications">
+      <h2>Publications and Presentations</h2>
+      <ul>
+        <li>[Author (Year). Title. Journal or conference.]</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: [your email]<br>
+      [Optional: <a href="https://www.linkedin.com/">LinkedIn</a>]</p>
+    </section>
+  </main>
 </body>
 </html>
